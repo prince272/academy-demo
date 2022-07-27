@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="9.3.0" />
+		<PackageReference Include="HtmlSanitizer" Version="5.0.376" />
+		<PackageReference Include="Humanizer.Core" Version="2.8.26" />
+		<PackageReference Include="IdentityServer4.EntityFramework.Storage" Version="4.1.1" />
+		<PackageReference Include="MediatR" Version="9.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="Syncfusion.DocIO.Net.Core" Version="19.1.0.55" />
+		<PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="19.1.0.55" />
+		<PackageReference Include="Twilio" Version="5.64.0" />
+		<PackageReference Include="UAParser" Version="3.1.46" />
+	</ItemGroup>
+
+</Project>

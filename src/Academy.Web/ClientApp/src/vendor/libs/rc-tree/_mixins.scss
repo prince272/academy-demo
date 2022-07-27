@@ -1,0 +1,23 @@
+@mixin rc-tree-theme($background) {
+  .rc-tree-checkbox-checked,
+  .rc-tree-checkbox-indeterminate {
+    border-color: $background !important;
+    background-color: $background !important;
+  }
+
+  .rc-tree-node-selected {
+    background-color: rgba($background, .2);
+  }    
+
+  .rc-tree-focused:not(.rc-tree-active-focused) {
+    border-color: $background;
+  }
+
+  .rc-tree-icon_loading[class]::after {
+    border-top-color: $background !important;
+  }
+
+  .rc-tree-treenode.drop-target {
+    box-shadow: 0 0 0 1px $background inset;
+  }
+}

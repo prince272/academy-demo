@@ -1,0 +1,357 @@
+﻿.modal-slide .modal-dialog {
+    min-height: unset;
+    max-height: unset;
+}
+
+.modal-slide .modal-content {
+    padding: 0;
+}
+.modal-slide .modal-body {
+    margin: 0;
+    height: 100%;
+}
+
+// issue: Unnecessary scrollbar is shown when an image is added to filepond. 
+// fix: hide the scrollbar since it's not necessary. (Firefox)
+.modal-body {
+    overflow-x: hidden;
+}
+
+// React-Bootstrap Multiple Modal
+// source: https://stackoverflow.com/questions/35060594/react-bootstrap-multiple-modal/44692901
+// @for $i from 1 through 6 {
+//    $zIndexBackdrop: #{1000 + (5 * $i)};
+//    $zIndexContent: #{1000 + (5 * $i) + 2};
+//
+//    .modal-backdrop.show:nth-of-type(#{$i}) {
+//        z-index: $zIndexBackdrop;
+//    }
+//
+//    div[role="dialog"][aria-modal="true"]:nth-of-type(#{$i}) {
+//        z-index: $zIndexContent;
+//    }
+//}
+/* CodePen Home: Bootstrap 4 Modal Fullscreen  */
+/* soruce: https://codepen.io/andreivictor/pen/MWYNPBV */
+.modal-fullscreen {
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    max-height: 100% !important;
+    margin: 0;
+}
+
+.modal-fullscreen .modal-content {
+    height: 100%;
+    max-height: 100% !important;
+    border: 0;
+    border-radius: 0;
+}
+
+.modal-fullscreen .modal-header {
+    border-radius: 0;
+}
+
+.modal-fullscreen .modal-body {
+    overflow-y: auto;
+}
+
+.modal-fullscreen .modal-footer {
+    border-radius: 0;
+}
+
+@media (max-width: 575.98px) {
+    .modal-fullscreen-sm {
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        max-height: 100% !important;
+        margin: 0;
+    }
+
+    .modal-fullscreen-sm .modal-content {
+        height: 100%;
+        max-height: 100% !important;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-sm .modal-header {
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-sm .modal-body {
+        overflow-y: auto;
+    }
+
+    .modal-fullscreen-sm .modal-footer {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .modal-fullscreen-md {
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        max-height: 100% !important;
+        margin: 0;
+    }
+
+    .modal-fullscreen-md .modal-content {
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-md .modal-header {
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-md .modal-body {
+        overflow-y: auto;
+    }
+
+    .modal-fullscreen-md .modal-footer {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .modal-fullscreen-lg {
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        max-height: 100% !important;
+        margin: 0;
+    }
+
+    .modal-fullscreen-lg .modal-content {
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-lg .modal-header {
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-lg .modal-body {
+        overflow-y: auto;
+    }
+
+    .modal-fullscreen-lg .modal-footer {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .modal-fullscreen-xl {
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        max-height: 100% !important;
+        margin: 0;
+    }
+
+    .modal-fullscreen-xl .modal-content {
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-xl .modal-header {
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-xl .modal-body {
+        overflow-y: auto;
+    }
+
+    .modal-fullscreen-xl .modal-footer {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .modal-fullscreen-xxl {
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        max-height: 100% !important;
+        margin: 0;
+    }
+
+    .modal-fullscreen-xxl .modal-content {
+        height: 100%;
+        max-height: 100% !important;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-xxl .modal-header {
+        border-radius: 0;
+    }
+
+    .modal-fullscreen-xxl .modal-body {
+        overflow-y: auto;
+    }
+
+    .modal-fullscreen-xxl .modal-footer {
+        border-radius: 0;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    pointer-events: none !important;
+}
+
+/* Bootstrap v4+ css class for pointer cursor */
+/* source: https://stackoverflow.com/questions/47269189/bootstrap-v4-css-class-for-pointer-cursor */
+.cursor-alias {
+    cursor: alias;
+}
+
+.cursor-all-scroll {
+    cursor: all-scroll;
+}
+
+.cursor-auto {
+    cursor: auto;
+}
+
+.cursor-cell {
+    cursor: cell;
+}
+
+.cursor-context-menu {
+    cursor: context-menu;
+}
+
+.cursor-col-resize {
+    cursor: col-resize;
+}
+
+.cursor-copy {
+    cursor: copy;
+}
+
+.cursor-crosshair {
+    cursor: crosshair;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.cursor-e-resize {
+    cursor: e-resize;
+}
+
+.cursor-ew-resize {
+    cursor: ew-resize;
+}
+
+.cursor-grab {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.cursor-grabbing {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+.cursor-help {
+    cursor: help;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.cursor-n-resize {
+    cursor: n-resize;
+}
+
+.cursor-ne-resize {
+    cursor: ne-resize;
+}
+
+.cursor-nesw-resize {
+    cursor: nesw-resize;
+}
+
+.cursor-ns-resize {
+    cursor: ns-resize;
+}
+
+.cursor-nw-resize {
+    cursor: nw-resize;
+}
+
+.cursor-nwse-resize {
+    cursor: nwse-resize;
+}
+
+.cursor-no-drop {
+    cursor: no-drop;
+}
+
+.cursor-none {
+    cursor: none;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-progress {
+    cursor: progress;
+}
+
+.cursor-row-resize {
+    cursor: row-resize;
+}
+
+.cursor-s-resize {
+    cursor: s-resize;
+}
+
+.cursor-se-resize {
+    cursor: se-resize;
+}
+
+.cursor-sw-resize {
+    cursor: sw-resize;
+}
+
+.cursor-text {
+    cursor: text;
+}
+
+.cursor-w-resize {
+    cursor: w-resize;
+}
+
+.cursor-wait {
+    cursor: wait;
+}
+
+.cursor-zoom-in {
+    cursor: zoom-in;
+}
+
+.cursor-zoom-out {
+    cursor: zoom-out;
+}
